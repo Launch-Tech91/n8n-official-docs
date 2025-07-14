@@ -1,10 +1,10 @@
 import crypto from 'crypto';
 import type {
-	IHookFunctions,
-	IWebhookFunctions,
 	IDataObject,
+	IHookFunctions,
 	INodeType,
 	INodeTypeDescription,
+	IWebhookFunctions,
 	IWebhookResponseData,
 } from 'n8n-workflow';
 import { NodeConnectionTypes } from 'n8n-workflow';
@@ -39,7 +39,7 @@ export class TelegramTrigger implements INodeType {
 				name: 'default',
 				httpMethod: 'POST',
 				responseMode: 'onReceived',
-				path: 'webhook',
+				path: '',
 			},
 		],
 		properties: [
